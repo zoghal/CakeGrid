@@ -9,9 +9,9 @@
      -- by Robert Ross (rross@sdreader.com)
      -- available at http://github.com/rross0227
 <<<<<<< HEAD
-     -- requires CakePHP 2.x beta
+     -- requires CakePHP 2.1+
 =======
-     -- requires CakePHP 2 Beta
+     -- requires CakePHP 2.1+
 >>>>>>> CakePHP2
 
     Copyright (c) 2011 The Daily Save, LLC.  All rights reserved.
