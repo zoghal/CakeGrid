@@ -1,10 +1,22 @@
 .DataGrid{
+<<<<<<< HEAD
     display: block;   
    // width: 100%;
     // position: absolute;
   //  margin: -10px -10px 0px -10px;
 }
 
+=======
+ 	clear: both;
+    display: block;
+     
+
+}
+
+.RTL {
+    direction: rtl;
+}
+>>>>>>> 1a5c7ed9149c08364194c8ce0407aed85cb3e16f
 
 
 .DataGrid div.Caption{
@@ -14,12 +26,17 @@
     overflow:hidden;
 
     white-space:nowrap;
+<<<<<<< HEAD
+=======
+    //padding: 5px 10px;
+>>>>>>> 1a5c7ed9149c08364194c8ce0407aed85cb3e16f
     border-left:1px solid #CCCCCC;
     border-right:1px solid #CCCCCC;
 
 }
 
 .DataGrid div.ButtomsGroup{
+<<<<<<< HEAD
     background: none repeat scroll 0 0 #EEEEEE;
 	border-top: 1px solid #FFFFFF;
 	border-bottom: 1px solid #ccc;
@@ -27,6 +44,15 @@
 //    border-right:1px solid #CCCCCC;
 	overflow: hidden;
     padding: 10px 3px;
+=======
+    background:url("/CakeGrid/img/captionbg.gif") repeat-x scroll center top #FAFAFA;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #fff;
+    border-left:1px solid #CCCCCC;
+    border-right:1px solid #CCCCCC;
+	overflow: hidden;
+    padding: 3px 3px;
+>>>>>>> 1a5c7ed9149c08364194c8ce0407aed85cb3e16f
 
 }
 
@@ -44,7 +70,11 @@
     color: #333;
     background-repeat: no-repeat;
   	background-position: 90% center;
+<<<<<<< HEAD
 	font-family: "rita";
+=======
+	
+>>>>>>> 1a5c7ed9149c08364194c8ce0407aed85cb3e16f
 
 }
 
@@ -70,6 +100,7 @@
     display: inline-block;
 }
 
+<<<<<<< HEAD
 
 
 .DataGrid table{
@@ -80,19 +111,45 @@
     border-spacing: 0px 0px;
  //	border-top:1px solid #fff;
     width: 100%;
+=======
+.DataGrid div.ButtomsGroup div.RTL{
+	float: right;
+}
+
+
+.DataGrid .GridScroller {
+	overflow:auto ;
+	border: none;
+ 
+}
+
+.DataGrid table{
+  	border-collapse: separate;
+    table-layout: fixed;
+    border-spacing: 1px 1px;
+ 	border-left:1px solid #CCCCCC;
+ 	border-top:1px solid #c7c7c7;
+>>>>>>> 1a5c7ed9149c08364194c8ce0407aed85cb3e16f
 	    
 }   
 
 .DataGrid table thead tr.cg_header {
+<<<<<<< HEAD
     //background: -moz-linear-gradient(center top , #F5F5F5, #DFDFDF) repeat scroll 0 0 transparent;
     background: -moz-linear-gradient(top center , #FFFFFF, #DDDDDD) repeat scroll 0 0 #E3E3E3;
     background: -webkit-linear-gradient( top , #FFFFFF , #DDDDDD) repeat scroll 0 0 #E3E3E3;
    // background:-moz-linear-gradient(center top , #FFFFFF 0%, #E5E5E5 100%) repeat scroll 0 0 #F4F4F4;
     border-bottom: 1px solid #AAAAAA;
+=======
+   background: -moz-linear-gradient(center top , #EFEFEF, #CACACA) repeat scroll 0 0 transparent;
+   
+    
+>>>>>>> 1a5c7ed9149c08364194c8ce0407aed85cb3e16f
 }
 
 
  .DataGrid table thead  tr.cg_header th , .DataGrid table tbody  tr td{
+<<<<<<< HEAD
     padding: 0px 5px;
     border-right:1px solid #CCCCCC;
     border-left:1px solid #fff;
@@ -142,6 +199,22 @@
 
  .DataGrid table thead  tr.tableHeader th {
      padding: 10px 5px;
+=======
+    padding: 5px 5px;
+    border-right:1px solid #CCCCCC;
+    border-left:1px solid #fff;
+    vertical-align: middle;
+    white-space: nowrap;
+    
+ }
+ 
+ .DataGrid table tbody  tr.cg_row td{
+         padding: 8px 5px;
+ }
+ 
+ .DataGrid table thead  tr.tableHeader th {
+     padding: 8px 5px;
+>>>>>>> 1a5c7ed9149c08364194c8ce0407aed85cb3e16f
  
  } 
  
@@ -186,6 +259,7 @@
 	margin: 2px 5px 0px 0px;
  } 
    
+<<<<<<< HEAD
 .DataGrid table colgroup{
     width: 100%;
 }
@@ -259,3 +333,26 @@
     font-weight: normal;
     
 }
+=======
+
+ .DataGrid table tbody  tr.cg_row.odd td{
+				background: #f7f7f7;
+				border-bottom: 1px solid #f7f7f7;
+ 
+    }  
+
+
+ .DataGrid div.Footer{
+
+    border: none;
+    background:url("/irsa/img/wbg.gif") repeat-x scroll center top transparent;
+    font-weight:bold;
+    overflow:hidden;
+    white-space:nowrap;
+    border-bottom:1px solid #CCCCCC;
+    border-left:1px solid #CCCCCC;
+    border-right:1px solid #CCCCCC;
+    padding: 5px;
+    height: 10px;
+ }
+>>>>>>> 1a5c7ed9149c08364194c8ce0407aed85cb3e16f

@@ -1,0 +1,17 @@
+<<<<<<< HEAD
+<?php foreach($actions as $title => $action){ 
+    if ( isset($action['options']['type']) and $action['options']['type'] == 'postLink') {
+        unset( $action['options']['type']);
+   	    echo $this->Form->postLink($title, $action['url'], $action['options'] + array('class' => 'button'));
+
+    }else
+    {
+        echo $this->Html->link($title, $action['url'], $action['options'] + array('class' => 'button')); 
+    }
+}
+?>
+=======
+<?php foreach($actions as $title => $action): ?>
+	<?php echo $this->Html->link($title, $action['url'], $action['options'] + array('class' => 'cg_action')); ?>
+<?php endforeach; ?>
+>>>>>>> 1a5c7ed9149c08364194c8ce0407aed85cb3e16f

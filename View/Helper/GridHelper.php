@@ -68,7 +68,10 @@ class GridHelper extends AppHelper {
 	function options($options){
 		$defaults = array(
 			'class_header'  => 'cg_header',
+<<<<<<< HEAD
 			'class_colGroup'  => 'cg_colGroup',
+=======
+>>>>>>> 1a5c7ed9149c08364194c8ce0407aed85cb3e16f
 			'class_row'     => 'cg_row',
 			'class_table'   => 'cg_table',
 			'empty_message' => 'No Results',
@@ -161,9 +164,14 @@ class GridHelper extends AppHelper {
 	 * @author Robert Ross
 	 */
 	function generate($results){
+<<<<<<< HEAD
 		$View = $this->_View();
         $this->Html->css('CakeGrid.cakegrid',null,array('inline' => false));
         $this->Html->script('CakeGrid.cakegrid',array('inline' => false));
+=======
+		$View = $this->_View;
+
+>>>>>>> 1a5c7ed9149c08364194c8ce0407aed85cb3e16f
 		$directory = $this->__settings['type'];
 		
 		if($this->__settings['type'] == 'csv' && !empty($this->__totals)){
@@ -185,6 +193,7 @@ class GridHelper extends AppHelper {
         array(			'plugin'  => $this->plugin_name)
         );
 	
+<<<<<<< HEAD
 //		$colGroup = $View->element($this->elemDir . DS . 'grid_colGroup', array(
 //			'plugin'  => $this->plugin_name, 
 //			'headers' => $this->__columns,
@@ -193,19 +202,29 @@ class GridHelper extends AppHelper {
 //        array(			'plugin'  => $this->plugin_name)
 //        );
 
+=======
+>>>>>>> 1a5c7ed9149c08364194c8ce0407aed85cb3e16f
         $results = $this->results($results);	
 		$generated = $View->element($this->elemDir . DS . 'grid_full', array(
          //   'plugin'  => $this->plugin_name,
 			'headers' => $headers,
+<<<<<<< HEAD
          //   'colGroup' => $colGroup,
+=======
+>>>>>>> 1a5c7ed9149c08364194c8ce0407aed85cb3e16f
 			'results' => $results,
 			'options' => $this->__settings
 		),
         array(	'plugin'  => $this->plugin_name)
         );
+<<<<<<< HEAD
       
     	return $generated;
         
+=======
+        
+    	return $generated;
+>>>>>>> 1a5c7ed9149c08364194c8ce0407aed85cb3e16f
 	}
 	
 	/**
@@ -217,7 +236,11 @@ class GridHelper extends AppHelper {
 	 */
 	function results($results = array()){
 		$rows = array();
+<<<<<<< HEAD
 		$View = $this->_View();
+=======
+		$View = $this->_View;
+>>>>>>> 1a5c7ed9149c08364194c8ce0407aed85cb3e16f
 		
 		foreach($results as $key => $result){
 			//-- Loop through columns
@@ -231,8 +254,12 @@ class GridHelper extends AppHelper {
 				'plugin'     => $this->plugin_name, 
 				'zebra'      => $key % 2 == 0 ? 'odd' : 'even', 
 				'rowColumns' => $rowColumns,
+<<<<<<< HEAD
 				'options'    => $this->__settings,
 				'recId'		 => $key,
+=======
+				'options'    => $this->__settings
+>>>>>>> 1a5c7ed9149c08364194c8ce0407aed85cb3e16f
 			),
             array(	'plugin'  => $this->plugin_name)
             );
@@ -345,9 +372,15 @@ class GridHelper extends AppHelper {
 		}
 		
 		if(isset($column['options']['element']) && $column['options']['element'] != false){
+<<<<<<< HEAD
 		$View = $this->_View();
             				
 			return  $View->element( $this->elemDir . DS .$column['options']['element'], array('result' => $value ,'rowData' => $result,'options' => $column['options'],'col' => $column ));
+=======
+			$View = $this->_View;
+				
+			return  $View->element($this->elemDir . DS . $column['options']['element'], array('result' => $value));
+>>>>>>> 1a5c7ed9149c08364194c8ce0407aed85cb3e16f
 		} else {
 			if(isset($column['options']['type']) && $column['options']['type'] == 'date'){
 				$value = date('m/d/Y', strtotime($value));
@@ -356,7 +389,11 @@ class GridHelper extends AppHelper {
 			} else if(isset($column['options']['type']) && $column['options']['type'] == 'money' && $this->__settings['type'] != 'csv'){
 				$value = money_format('%n', $value);
 			} else if(isset($column['options']['type']) && $column['options']['type'] == 'actions'){
+<<<<<<< HEAD
 		$View = $this->_View();
+=======
+           		$View = $this->_View;
+>>>>>>> 1a5c7ed9149c08364194c8ce0407aed85cb3e16f
 				$actions = array();
 			
 				//-- Need to retrieve the results of the trailing params
@@ -370,12 +407,21 @@ class GridHelper extends AppHelper {
 					$trailingParams = array();
 					if(!empty($action['trailingParams'])){
 						foreach($action['trailingParams'] as $key => $param){
+<<<<<<< HEAD
 							$tempp = Set::extract($param, $result);
 							$trailingParams[$key] = array_pop($tempp);
 						}
 					}
 					$actions[$name] = array(
 						'url' => Router::url($action['url'] + $trailingParams,true),
+=======
+							$trailingParams[$key] = array_pop(Set::extract($param, $result));
+						}
+					}
+				
+					$actions[$name] = array(
+						'url' => Router::url($action['url'] + $trailingParams),
+>>>>>>> 1a5c7ed9149c08364194c8ce0407aed85cb3e16f
 						'options' => $action['options']
 					);
 				}
@@ -446,6 +492,7 @@ class GridHelper extends AppHelper {
 	 * @return void
 	 * @author Robert Ross
 	 */
+<<<<<<< HEAD
 	private function _View() {
 	   
        // $this->_View;
@@ -455,4 +502,15 @@ class GridHelper extends AppHelper {
 
 
 
+=======
+//	private function __view() {
+//		if (!empty($this->globalParams['viewInstance'])) {
+//			$View = $this->globalParams['viewInstance'];
+//		} else {
+//			$View = ClassRegistry::getObject('view');
+//		}
+//		
+//		return $View;
+//	}
+>>>>>>> 1a5c7ed9149c08364194c8ce0407aed85cb3e16f
 }
