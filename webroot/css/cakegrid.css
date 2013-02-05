@@ -1,0 +1,261 @@
+.DataGrid{
+    display: block;   
+   // width: 100%;
+    // position: absolute;
+  //  margin: -10px -10px 0px -10px;
+}
+
+
+
+.DataGrid div.Caption{
+    display: block;
+    background:url("/CakeGrid/img/captionbg.gif") repeat-x scroll center top transparent;
+    font-weight:bold;
+    overflow:hidden;
+
+    white-space:nowrap;
+    border-left:1px solid #CCCCCC;
+    border-right:1px solid #CCCCCC;
+
+}
+
+.DataGrid div.ButtomsGroup{
+    background: none repeat scroll 0 0 #EEEEEE;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #ccc;
+//    border-left:1px solid #CCCCCC;
+//    border-right:1px solid #CCCCCC;
+	overflow: hidden;
+    padding: 10px 3px;
+
+}
+
+
+.DataGrid div.ButtomsGroup a.buttom{
+    display:  inline-block;
+    vertical-align: top;
+    padding: 5px  30px 5px 10px;	
+    border: 1px solid transparent;
+    margin: 0px 2px;
+    cursor: pointer;
+    font-family: tahoma;
+    font-size: 12px;
+   	text-shadow:0 1px 0 #ccc;
+    color: #333;
+    background-repeat: no-repeat;
+  	background-position: 90% center;
+	font-family: "rita";
+
+}
+
+.DataGrid div.ButtomsGroup .icon-add{
+	background-image: url("/irsa/img/icons/add.png") ;
+}
+
+.DataGrid div.ButtomsGroup a.buttom:hover{
+
+    border-right: 1px solid #fff;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #eee;
+    outline: 1px solid #ccc;
+
+}
+
+
+.DataGrid div.ButtomsGroup div.Spliter{
+    border-left:1px solid #CCCCCC;
+    border-right:1px solid #FFFFFF;
+    height:22px;
+    margin:1px;
+    display: inline-block;
+}
+
+
+
+.DataGrid table{
+  	border-collapse: separate;
+    table-layout: fixed;
+    overflow: hidden;
+    position: relative;
+    border-spacing: 0px 0px;
+ //	border-top:1px solid #fff;
+    width: 100%;
+	    
+}   
+
+.DataGrid table thead tr.cg_header {
+    //background: -moz-linear-gradient(center top , #F5F5F5, #DFDFDF) repeat scroll 0 0 transparent;
+    background: -moz-linear-gradient(top center , #FFFFFF, #DDDDDD) repeat scroll 0 0 #E3E3E3;
+    background: -webkit-linear-gradient( top , #FFFFFF , #DDDDDD) repeat scroll 0 0 #E3E3E3;
+   // background:-moz-linear-gradient(center top , #FFFFFF 0%, #E5E5E5 100%) repeat scroll 0 0 #F4F4F4;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+
+ .DataGrid table thead  tr.cg_header th , .DataGrid table tbody  tr td{
+    padding: 0px 5px;
+    border-right:1px solid #CCCCCC;
+    border-left:1px solid #fff;
+    vertical-align: middle;
+    
+ }
+ 
+ 
+.DataGrid table thead  tr.cg_header th:last-child,
+.DataGrid table tbody  tr td:last-child{
+    border-left: none;
+} 
+
+.DataGrid table thead  tr.cg_header th:first-child,
+.DataGrid table tbody  tr td:first-child{
+    border-right: none;
+} 
+
+.DataGrid table thead  tr.cg_header th {
+    height: 25px;
+       padding: 8px 5px;
+   border-bottom:1px solid #CCCCCC;
+   
+}
+
+.DataGrid table thead  tr.cg_header th a{
+	color: red;
+}
+
+.DataGrid table thead  tr.cg_header th a:before{
+	content:  "\e501";
+		font-family: 'rita';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+ 
+ .DataGrid table tbody  tr.cg_row td{
+         padding: 8px 5px;
+         border-bottom: 1px dotted #ccc;
+ }
+
+ .DataGrid table tbody  tr.cg_row:last-child td{
+ 	border-bottom: none;
+ }
+
+ .DataGrid table thead  tr.tableHeader th {
+     padding: 10px 5px;
+ 
+ } 
+ 
+ .DataGrid table thead  tr.tableHeader th div.Col{
+ 	height: 22px;
+ 	line-height: 22px;
+	padding-right: 30px;
+	min-width: 100px;
+ }
+ 
+ .DataGrid table thead  tr.tableHeader th div.RowNumber{
+ 	 	height: 22px;
+ 	line-height: 22px;
+ }
+ 
+.DataGrid table thead  tr.tableHeader th span.Scroller{
+	cursor: e-resize;
+	width: 2px;
+	height: 22px;
+	float: right;
+
+  }
+ 
+ .DataGrid table thead  tr.tableHeader th span.RTL{
+ 	float: left;
+ } 
+  
+.DataGrid table thead  tr.tableHeader th  div.Sorter{
+	cursor: pointer;
+	float: left;
+	height: 16px;
+	width: 16px;
+	margin: 2px 5px ;
+    border:1px solid transparent;
+  } 
+.DataGrid table thead  tr.tableHeader th  div.Sorter:hover{
+    border:1px solid #fff;
+    outline: 1px solid #ddd;
+}  
+ .DataGrid table thead  tr.tableHeader th div.RTL{
+	float: right;
+	margin: 2px 5px 0px 0px;
+ } 
+   
+.DataGrid table colgroup{
+    width: 100%;
+}
+
+
+ .DataGrid table tbody  tr.odd {
+				background: #fafafa;
+				border-bottom: 1px solid #f7f7f7;
+ 
+    }  
+ .DataGrid table tbody  tr:hover{
+         background: #FCFBF4;
+         color: #000;
+ } 
+
+
+ .DataGrid > .Footer{
+
+    background:url("/CakeGrid/img/wbg.gif") repeat-x scroll center top transparent;
+    font-weight:bold;
+    display: block;
+    position: relative;
+
+    padding: 5px;
+ }
+
+.DataGrid  > .Footer  .numbers{
+    display: block;
+    
+} 
+
+
+.DataGrid div.Footer .numbers  span{
+    padding: 5px 7px;
+    display: inline-block;
+     //background: -moz-linear-gradient(center top , #EFEFEF, #CACACA) repeat scroll 0 0 transparent;
+     background: url('/Core/img/patterns/bg.png');
+     border : 1px solid #BBBBBB;
+    -webkit-box-shadow:  0 0 2px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;   
+       
+    margin: 2px 3px;
+    border: 1px solid #666;
+
+}
+ 
+.DataGrid div.Footer .numbers  span >a {
+    color: #fff;
+}
+
+.DataGrid div.Footer .numbers  span.current{
+    color: #222;
+      text-shadow: 0px 1px 2px #fff;
+     background: -moz-linear-gradient(center top , #FFD68F, #FFA200) repeat scroll 0 0 transparent;
+     
+    
+}
+
+ 
+
+
+.DataGrid .cg_row .button{
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px;
+    font-size: 10px;
+    font-weight: normal;
+    
+}

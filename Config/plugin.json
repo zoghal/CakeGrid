@@ -1,0 +1,12 @@
+{
+	"name" : "Rita",
+	"type" : "Core",
+	"description": "Rita SMF System",
+
+	"author": "Mohammad Saleh Souzanchi",
+	"authorEmail": "saleh.souzanchi@gmail.com",
+	"authorUrl": "http://soozanchi.ir",
+	
+	"Events" : [],
+	"Blocks" : []
+}
