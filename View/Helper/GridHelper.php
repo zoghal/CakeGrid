@@ -392,7 +392,8 @@ class GridHelper extends AppHelper {
 			
 			if(!empty($linkable['trailingParams']) && is_array($linkable['trailingParams'])){
 				foreach($linkable['trailingParams'] as $key => $param){
-					$trailingParams[$key] = array_pop(Set::extract($param, $result));
+					$res = Set::extract($param, $result);
+					$trailingParams[$key] = array_pop($res);
 				}
 			}
 			
