@@ -9,9 +9,9 @@
      -- by Robert Ross (rross@sdreader.com)
      -- available at http://github.com/rross0227
 <<<<<<< HEAD
-     -- requires CakePHP 2.x beta
+     -- requires CakePHP 2.1+
 =======
-     -- requires CakePHP 2 Beta
+     -- requires CakePHP 2.1+
 >>>>>>> CakePHP2
 
     Copyright (c) 2011 The Daily Save, LLC.  All rights reserved.
@@ -136,6 +136,13 @@ This will output in the cell the users first and last name together. Concat uses
         '/User/created',
         '/User/register_ip'
     ));
+
+## Paginate
+By setting paginate as true you instruct CakeGrid to use the Paginator::sort method to create the headers of your table
+
+      $this->Grid->addColumn('User', '/User/name', array('paginate'=>true));
+
+CakeGrid won't add pagination links at the end of the table, you should add them yourself if you need them.
 
 ## Elements
 
