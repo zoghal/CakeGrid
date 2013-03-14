@@ -27,7 +27,7 @@ For CakePHP 1.3 support, please see the [1.3 branch](https://github.com/bobbytab
 
 _[Manual]_
 
-* Download this: [https://github.com/zoghal/CakeGrid/tree/2.3](https://github.com/zoghal/CakeGrid/tree/2.3)
+* Download this: [https://github.com/zoghal/CakeGrid/tree/master](https://github.com/zoghal/CakeGrid/tree/master)
 * Unzip that download.
 * Copy the resulting folder to `app/Plugin`
 * Rename the folder you just copied to `Upload`
@@ -36,7 +36,7 @@ _[GIT Submodule]_
 
 In your app directory type:
 
-	git submodule add -b 2.3 https://github.com/zoghal/CakeGrid.git
+	git submodule add -b master https://github.com/zoghal/CakeGrid.git
 	git submodule init
 	git submodule update
 
@@ -45,7 +45,7 @@ In your app directory type:
 
 In your `Plugin` directory type:
 
-	git clone -b 2.3 https://github.com/zoghal/CakeGrid.git CakeGrid
+	git clone -b master https://github.com/zoghal/CakeGrid.git CakeGrid
 
 ### Enable plugin
 
