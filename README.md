@@ -13,7 +13,7 @@ CakeGrid Plugin is DataGrid Tables for CakePHP + GUI
 
 ## Demo
 ![DataGrid Demo](http://soozanchi.ir/rita1/cakegird.png)
-![DataGrid Demo](http://soozanchi.ir/rita1/cakegird2.png)
+![demo](http://soozanchi.ir/rita1/cakegrid2.png)
    
 ## Requirements
 
