@@ -14,12 +14,12 @@
 		
        $temp = explode('.',$header['valuePath']);
        $isSortable = false; 
-//       if ( ( count($temp) == 2 ) and ( isset($this->request->params['paging'][$temp[0]] ) )){
+    if ( ( count($temp) == 2 ) and ( isset($this->request->params['paging'][$temp[0]] ) )){
         $isSortable = true;
-//        }
+        }
       if ($isSortable):  
     ?>
-	<th <?php echo $width ?> ><?php echo $header['title'] == 'Actions' ? 'عملیات' :  $this->Paginator->sort($header['valuePath'],$header['title']);  ?></th>
+	<th <?php echo $width ?> ><?php echo $header['title'] == 'Actions' ? 'عملیات' :  $this->Paginator->sort($header['valuePath'],$header['title']); ?></th>
     <?php else: ?>
 	<th <?php echo $width ?> ><?php echo $header['title'] == 'Actions' ? 'عملیات' : $header['title'] ?></th>
     <?php endif; ?>
