@@ -8,7 +8,7 @@
 
 # CakeGrid 2.3
 
-CakeGrid Plugin is DataGrid Tables for CakePHP + GUI 
+CakeGrid Plugin is DataGrid Tables for CakePHP  
 
 
 ## Demo
