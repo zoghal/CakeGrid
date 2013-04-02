@@ -375,7 +375,7 @@ class GridHelper extends AppHelper {
 						}
 					}
 					$actions[$name] = array(
-						'url' => Router::url($action['url'] + $trailingParams,true),
+						'url' => $this->url($action['url'] + $trailingParams,true),
 						'options' => $action['options']
 					);
 				}
