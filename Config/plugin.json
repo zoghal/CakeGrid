@@ -7,6 +7,6 @@
 	"authorEmail": "saleh.souzanchi@gmail.com",
 	"authorUrl": "http://soozanchi.ir",
 	
-	"Events" : [],
+	"Events" : ["CakeGrid"],
 	"Blocks" : []
 }
