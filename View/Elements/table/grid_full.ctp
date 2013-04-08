@@ -1,4 +1,5 @@
-<div class="DataGrid">
+<div class="DataGrid box box-child-row box-fluid">
+	<div class="box-fluid">
 	<table class="headerTable <?php echo $options['class_table'] ?>">
 		<thead>
 			<?php echo $headers ?>
@@ -8,15 +9,12 @@
 			<?php echo $results ?>
 		</tbody>
 	</table>
-
+	</div>
 	<div class="Footer">
-			<div >
-		 	<?php 
-			 	echo $this->Paginator->counter('
-			    	صفحه : {:page} از {:pages} , تعداد سطرها : {:current} از {:count},  شروع شده از رکورد {:start} تا  {:end} '
-			    	); 
-				?>
-			</div>  
+			<div >	<?= $this->Paginator->counter('صفحه : {:page} از {:pages}'	); 	?>	</div>  
+			<div >	<?= $this->Paginator->counter('تعداد سطرها : {:current} از {:count}'	); 	?>	</div>  
+			<div >	<?= $this->Paginator->counter('شروع شده از رکورد {:start} تا  {:end} '	); 	?>	</div>  
+		
 				<?php
 				
 				if ( $this->Paginator->hasPage(null,2) ){   

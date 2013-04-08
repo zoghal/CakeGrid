@@ -1,5 +1,8 @@
 .DataGrid{
     border:1px solid #bbb;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .no-padding .DataGrid{
@@ -75,7 +78,7 @@
  }
 
  .DataGrid table tbody  tr.cg_row:last-child td{
- 	border-bottom: none;
+ //	border-bottom: none;
  }
 
  .DataGrid table thead  tr.tableHeader th {
@@ -140,12 +143,14 @@
  } 
 
 
- .DataGrid > .Footer{
-background: linear-gradient(to bottom, #EDEDED 0%, #DEDEDE 100%) repeat scroll 0 0 transparent;
+.DataGrid > .Footer{
+	background: -webkit-linear-gradient( top, #EDEDED 0%, #DEDEDE 100%) repeat scroll 0 0 transparent;
+	background: linear-gradient(to bottom, #EDEDED 0%, #DEDEDE 100%) repeat scroll 0 0 transparent;
 	border-top: 1px solid #bbbbbb;
     font-weight:bold;
     display: table;
     width: 100%;
+    table-layout: fixed;
     position: relative;
 
  }
@@ -153,9 +158,19 @@ background: linear-gradient(to bottom, #EDEDED 0%, #DEDEDE 100%) repeat scroll 0
  .DataGrid > .Footer > div {
  	display: table-cell;
     line-height: 30px;
-       border-right:1px solid #CCCCCC;
+    padding: 0px 10px;
+    border-right:1px solid #CCCCCC;
     border-left:1px solid #fff; 
  }
+
+ .DataGrid > .Footer > div:first-child{
+ 	border-right: none;
+ }
+
+ .DataGrid > .Footer > div:last-child{
+ 	border-left: none;
+ }
+ 
 .DataGrid  > .Footer  .numbers{
     display: block;
     
