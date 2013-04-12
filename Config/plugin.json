@@ -1,6 +1,6 @@
 {
 	"name" : "CakeGrid",
-	"type" : "Core",
+	"type" : "Component",
 	"description": "Rita SMF System",
 
 	"author": "Mohammad Saleh Souzanchi",
