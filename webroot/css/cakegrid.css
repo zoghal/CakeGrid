@@ -1,6 +1,5 @@
 .DataGrid{
     border:1px solid #bbb;
-    height: 100%;
     position: relative;
     overflow: hidden;
 }
@@ -218,3 +217,7 @@
     font-weight: normal;
     
 }
+
+
+
+
