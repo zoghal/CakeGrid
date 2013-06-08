@@ -148,10 +148,11 @@ class GridHelper extends AppHelper {
 		);
 		
 		if(!isset($this->__columns['actions'])){
-                                            	if(isset($options['width']))
+                                            	if(isset($options['width'])) {
                                             		$this->addColumn('Actions', null, array('type' => 'actions','width'=>$options['width']));
-                                            	else
+                                                                  } else {
                                             		$this->addColumn('Actions', null, array('type' => 'actions'));
+                                                                  }
 		}
 		
 		return true;
