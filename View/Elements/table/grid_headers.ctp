@@ -5,16 +5,18 @@
     <?php $width = (isset( $header['options']['width'] ))?  'width="'.$header['options']['width'].'"' : "" ;?>
     <?php
 		
-
+		if(is_string($header['valuePath'] )){
 		$header['valuePath'] = substr( $header['valuePath'],1);
 	    $header['valuePath'] = str_replace('/','.',$header['valuePath']);
+	    }
 		 ?>
    <?php
    		
-		
+			if(is_string($header['valuePath'] )){
        $temp = explode('.',$header['valuePath']);
+       }
        $isSortable = false; 
-    if ( ( count($temp) == 2 ) and ( isset($this->request->params['paging'][$temp[0]] ) )){
+    if ( is_string($header['valuePath']) and ( count($temp) == 2 ) and ( isset($this->request->params['paging'][$temp[0]] ) )){
         $isSortable = true;
         }
       if ($isSortable):  
