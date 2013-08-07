@@ -162,8 +162,7 @@ class GridHelper extends AppHelper {
 	 */
 	function generate($results){
 		$View = $this->_View();
-        $this->Html->css('CakeGrid.cakegrid',null,array('inline' => false));
-        $this->Html->script('CakeGrid.cakegrid',array('inline' => false));
+
 		$directory = $this->__settings['type'];
 		
 		if($this->__settings['type'] == 'csv' && !empty($this->__totals)){
@@ -203,7 +202,8 @@ class GridHelper extends AppHelper {
 		),
         array(	'plugin'  => $this->plugin_name)
         );
-      
+      		$generated =  "\n\t" .        $this->Html->css('CakeGrid.cakegrid',array('inline' => true)). "\n\t" .$this->Html->script('CakeGrid.cakegrid').$generated;
+
     	return $generated;
         
 	}
@@ -402,7 +402,6 @@ class GridHelper extends AppHelper {
 			
 			$value = $this->Html->link($value, $url, $linkable['options']);
 		}
-		
 		return $value;
 	}
 	
