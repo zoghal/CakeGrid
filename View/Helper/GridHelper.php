@@ -202,7 +202,7 @@ class GridHelper extends AppHelper {
 		),
         array(	'plugin'  => $this->plugin_name)
         );
-      		$generated =  "\n\t" .        $this->Html->css('CakeGrid.cakegrid',array('inline' => true)). "\n\t" .$this->Html->script('CakeGrid.cakegrid').$generated;
+      		$generated =  "\n\t" .        $this->Html->css('CakeGrid.cakegrid',array('inline' => true)).$generated;
 
     	return $generated;
         
@@ -374,10 +374,14 @@ class GridHelper extends AppHelper {
 							$trailingParams[$key] = array_pop($tempp);
 						}
 					}
+					
+					$action['url'] = Hash::merge($action['url'],$trailingParams) ;
+	
 					$actions[$name] = array(
-						'url' => $this->url($action['url'] + $trailingParams,true),
+						'url' => $this->url($action['url'] ,true),
 						'options' => $action['options']
 					);
+	
 				}
 			
 				return $View->element($this->elemDir . DS . 'column_actions', array( 'actions' => $actions), array('plugin' => $this->plugin_name));
