@@ -110,7 +110,7 @@ class GridHelper extends AppHelper {
 			'type' 	   => 'string',
 			'element'  => false,
 			'linkable' => false,
-			'total'    => false
+			'total'    => false,
 		);
 		
 		$options = array_merge($defaults, $options);
@@ -139,11 +139,12 @@ class GridHelper extends AppHelper {
 	 * @return void
 	 * @author Robert Ross
 	 */
-	function addAction($name, array $url, array $trailingParams = array(), array $options = array()){
+	function addAction($name, array $url, array $trailingParams = array(), array $options = array(),$onHide = false){
 		$this->__actions[$name] = array(
 			'url'  			 => $url,
 			'trailingParams' => $trailingParams,
-			'options'        => $options
+			'options'        => $options,
+			'onHide'        => $onHide
 		);
 		
 		if(!isset($this->__columns['actions'])){
@@ -361,6 +362,7 @@ class GridHelper extends AppHelper {
 			
 				//-- Need to retrieve the results of the trailing params
 				foreach($this->__actions as $name => $action){
+				
 					//-- Check to see if the action is supposed to be hidden for this result (set in the controller)
 					if(isset($result['show_actions']) && is_array($result['show_actions']) && !in_array($name, $result['show_actions'])){
 						continue;
@@ -375,10 +377,14 @@ class GridHelper extends AppHelper {
 						}
 					}
 					
+					if(is_callable($action['onHide']) and $action['onHide']($result) === true) {
+							continue;
+					}
+					
 					$action['url'] = Hash::merge($action['url'],$trailingParams) ;
 	
 					$actions[$name] = array(
-						'url' => $this->url($action['url'] ,true),
+						'url' => $action['url'], //$this->url($action['url'] ,true),
 						'options' => $action['options']
 					);
 	

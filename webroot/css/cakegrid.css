@@ -16,7 +16,8 @@
     overflow: hidden;
     position: relative;
     border-spacing: 0px 0px;
-    width: 100%;
+    width: auto;
+    min-width: 100%;
 	    
 }   
 
@@ -39,6 +40,8 @@
 .DataGrid table thead  tr.cg_header th:last-child,
 .DataGrid table tbody  tr td:last-child{
     border-left: none;
+    width: -moz-min-content;
+    
 } 
 
 .DataGrid table thead  tr.cg_header th:first-child,

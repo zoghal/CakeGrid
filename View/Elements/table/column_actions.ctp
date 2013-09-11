@@ -7,7 +7,6 @@
 
     }else
     {
-   
         echo $this->Html->link($title, $action['url'], $action['options'] + array('class' => 'button')); 
     }
 }
