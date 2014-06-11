@@ -140,6 +140,7 @@ class GridHelper extends AppHelper {
 	 * @author Robert Ross
 	 */
 	function addAction($name, array $url, array $trailingParams = array(), array $options = array()){
+                
 		$this->__actions[$name] = array(
 			'url'  			 => $url,
 			'trailingParams' => $trailingParams,
@@ -147,7 +148,11 @@ class GridHelper extends AppHelper {
 		);
 		
 		if(!isset($this->__columns['actions'])){
-			$this->addColumn('Actions', null, array('type' => 'actions'));
+                                            	if(isset($options['width'])) {
+                                            		$this->addColumn('Actions', null, array('type' => 'actions','width'=>$options['width']));
+                                                                  } else {
+                                            		$this->addColumn('Actions', null, array('type' => 'actions'));
+                                                                  }
 		}
 		
 		return true;
