@@ -1,4 +1,4 @@
-      _____      _           _____      _     _ 
+_____      _           _____      _     _ 
      / ____|    | |         / ____|    (_)   | |
     | |     __ _| | _____  | |  __ _ __ _  __| |
     | |    / _` | |/ / _ \ | | |_ | '__| |/ _` |
@@ -14,6 +14,7 @@ CakeGrid Plugin is DataGrid Tables for CakePHP
 ## Demo
 ![DataGrid Demo](http://soozanchi.ir/rita1/cakegird.png)
 ![demo](http://soozanchi.ir/rita1/cakegrid2.png)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fzoghal%2FCakeGrid.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fzoghal%2FCakeGrid?ref=badge_shield)
    
 ## Requirements
 
@@ -212,3 +213,5 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fzoghal%2FCakeGrid.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fzoghal%2FCakeGrid?ref=badge_large)
